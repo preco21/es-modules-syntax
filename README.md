@@ -196,6 +196,8 @@ export {default} from 'default';
 export default from 'default'; // ES NEXT proposal
 ```
 
+* https://github.com/leebyron/ecmascript-export-default-from
+
 ### Default Export as Named
 
 ```javascript
@@ -203,11 +205,15 @@ export {default as prop} from 'module';
 export prop from 'module'; // ES NEXT proposal
 ```
 
+* https://github.com/leebyron/ecmascript-export-default-from
+
 ### All Entries as Namespace (ES NEXT proposal)
 
 ```javascript
 export * as ns from 'module';
 ```
+
+* https://github.com/leebyron/ecmascript-export-ns-from
 
 ## License
 
