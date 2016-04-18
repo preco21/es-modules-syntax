@@ -62,7 +62,7 @@ export default (x) => {
   return gcd(b, a % b);
 }
 
-// class deafult export
+// class default export
 export default class {
   constructor(a = 0) {
     this.setA(a);
