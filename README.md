@@ -50,11 +50,8 @@ import module, * as moduleAll from 'module';
 ### Default (one per module)
 
 ```javascript
-// const deafult export
+// variable default export
 export default Math.PI;
-
-// let deafult export
-export default 'bar';
 
 // arrow function default export
 export default (x) => {
