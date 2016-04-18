@@ -40,7 +40,7 @@ import 'module';
 
 ```javascript
 import React, {Component, PropTypes} from 'react';
-import module, * as moduleAll from './module';
+import module, * as moduleAll from 'module';
 ```
 
 **Note:** Default export always should precede.
