@@ -76,6 +76,10 @@ export default class {
     this.a = a;
   }
 };
+
+// variable default export
+const a = 123;
+export default a;
 ```
 
 ### Named
