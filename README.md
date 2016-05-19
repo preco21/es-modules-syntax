@@ -43,7 +43,7 @@ import React, {Component, PropTypes} from 'react';
 import module, * as moduleAll from 'module';
 ```
 
-**Note:** Default export always should precede.
+**Note:** Default export should always be preceded.
 
 ## Basic Exports
 
