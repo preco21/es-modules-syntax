@@ -2,41 +2,41 @@
 
 > HAAAX!
 
-## Basic Imports
+## :arrow_down_small: Basic Imports
 
-### Default
+### :beginner: Default
 
 ```javascript
 import module from 'module';
 ```
 
-### Named
+### :beginner: Named
 
 ```javascript
 import {prop} from 'module';
 ```
 
-### Alias
+### :beginner: Alias
 
 ```javascript
 import {prop as alias} from 'module';
 ```
 
-### All
+### :beginner: All
 
 ```javascript
 import * as module from 'module';
 ```
 
-### Bare
+### :beginner: Bare
 
 ```javascript
 import 'module';
 ```
 
-## Advanced Imports
+## :arrow_double_down: Advanced Imports
 
-### Default with Named and All
+### :beginner: Default with Named or All
 
 ```javascript
 import React, {Component, PropTypes} from 'react';
@@ -45,9 +45,9 @@ import module, * as moduleAll from 'module';
 
 **Note:** Default export should always be preceded.
 
-## Basic Exports
+## :arrow_up_small: Basic Exports
 
-### Default (one per module)
+### :beginner: Default (one per module)
 
 ```javascript
 // variable default export
@@ -82,7 +82,7 @@ const a = 123;
 export default a;
 ```
 
-### Named
+### :beginner: Named
 
 ```javascript
 // const named export
@@ -123,7 +123,7 @@ export class A {
 };
 ```
 
-### Lazy
+### :beginner: Lazy
 
 ```javascript
 const pi = Math.PI;
@@ -143,9 +143,9 @@ export {
 };
 ```
 
-## Advanced Exports
+## :arrow_double_up: Advanced Exports
 
-### Export with Destructuring
+### :beginner: Export with Destructuring
 
 ```javascript
 const obj = {
@@ -156,41 +156,41 @@ const obj = {
 export const {a, b} = obj;
 ```
 
-### Export with Comma Separated Variables
+### :beginner: Export with Comma Separated Variables
 
 ```javascript
 export const a = 123, b = 321, c = 321;
 ```
 
-## Basic Re-Exports
+## :repeat: Basic Re-Exports
 
-### Named
+### :beginner: Named
 
 ```javascript
 export {prop} from 'module';
 ```
 
-### Alias
+### :beginner: Alias
 
 ``` javascript
 export {prop as alias} from 'module';
 ```
 
-### All Entries (except default export)
+### :beginner: All Entries (except default export)
 
 ```javascript
 export * from 'module';
 ```
 
-## Advanced Re-Exports
+## :twisted_rightwards_arrows: Advanced Re-Exports
 
-### Named Export as Default
+### :beginner: Named Export as Default
 
 ```javascript
 export {prop as default} from 'module';
 ```
 
-### Default Export as Default
+### :beginner: Default Export as Default
 
 ```javascript
 export {default} from 'default';
@@ -199,7 +199,7 @@ export default from 'default'; // ES NEXT proposal
 
 * https://github.com/leebyron/ecmascript-export-default-from
 
-### Default Export as Named
+### :beginner: Default Export as Named
 
 ```javascript
 export {default as prop} from 'module';
@@ -208,7 +208,7 @@ export prop from 'module'; // ES NEXT proposal
 
 * https://github.com/leebyron/ecmascript-export-default-from
 
-### All Entries as Namespace (ES NEXT proposal)
+### :beginner: All Entries as Namespace (ES NEXT proposal)
 
 ```javascript
 export * as ns from 'module';
