@@ -76,7 +76,7 @@ export default class {
 }
 
 // export function declaration as default
-export function(x) {
+export function (x) {
   return x * x * x;
 }
 ```
