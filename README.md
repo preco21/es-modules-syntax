@@ -60,7 +60,7 @@ export default (x) => x * x * x;
 const a = 123;
 export default a;
 
-// export class as default
+// export class declaration as default
 export default class {
   constructor(a = 0) {
     this.setA(a);
@@ -75,7 +75,7 @@ export default class {
   }
 }
 
-// export function as default
+// export function declaration as default
 export function(x) {
   return x * x * x;
 }
@@ -84,18 +84,18 @@ export function(x) {
 > Named
 
 ```javascript
-// export variable statement
+// export variable
 export const pi = Math.PI;
 
-// export variable statement, but read-only
-export let foo = 'bar';
-
-// export variable statement, which contains arrow function expression
+// export variable, which contains arrow function expression
 export const str = () => `
 bla
 bla
 bla
 `;
+
+// export let variable, but read-only
+export let foo = 'bar';
 
 // export function declaration
 export function gcd(a, b) {
