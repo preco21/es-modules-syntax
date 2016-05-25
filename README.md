@@ -50,19 +50,17 @@ import module, * as moduleAll from 'module';
 > Default (one per module)
 
 ```javascript
-// variable default export
+// export value as default
 export default Math.PI;
 
-// arrow function default export
-export default (x) => {
-  if (!b) {
-    return a;
-  }
+// export arrow function expression as default
+export default (x) => x * x * x;
 
-  return gcd(b, a % b);
-}
+// export variable as default
+const a = 123;
+export default a;
 
-// class default export
+// export class as default
 export default class {
   constructor(a = 0) {
     this.setA(a);
@@ -75,30 +73,31 @@ export default class {
   setA(a = 0) {
     this.a = a;
   }
-};
+}
 
-// variable default export
-const a = 123;
-export default a;
+// export function as default
+export function(x) {
+  return x * x * x;
+}
 ```
 
 > Named
 
 ```javascript
-// const named export
+// export variable statement
 export const pi = Math.PI;
 
-// arrow function named export
+// export variable statement, but read-only
+export let foo = 'bar';
+
+// export variable statement, which contains arrow function expression
 export const str = () => `
 bla
 bla
 bla
 `;
 
-// let named export
-export let foo = 'bar';
-
-// function named export
+// export function declaration
 export function gcd(a, b) {
   if (!b) {
     return a;
@@ -107,7 +106,7 @@ export function gcd(a, b) {
   return gcd(b, a % b);
 }
 
-// class named export
+// export class declaration
 export class A {
   constructor(a = 0) {
     this.setA(a);
@@ -120,7 +119,7 @@ export class A {
   setA(a = 0) {
     this.a = a;
   }
-};
+}
 ```
 
 > Lazy
@@ -172,7 +171,7 @@ export {prop} from 'module';
 
 > Alias
 
-``` javascript
+```javascript
 export {prop as alias} from 'module';
 ```
 
