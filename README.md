@@ -138,7 +138,7 @@ function getRandomInt(max = 10, min = 0) {
 export {
   pi, // export
   calcPlus as plus, // export as alias
-  getRandomInt as default // export as default
+  getRandomInt as default, // export as default, trailing comma is not necessary
 };
 ```
 
@@ -149,7 +149,7 @@ export {
 ```javascript
 const obj = {
   a: 123,
-  b: 321
+  b: 321,
 };
 
 export const {a, b} = obj;
