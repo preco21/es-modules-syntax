@@ -22,7 +22,7 @@ import {prop} from 'module';
 import {prop as alias} from 'module';
 ```
 
-> All
+> Namespace
 
 ```javascript
 import * as module from 'module';
@@ -36,7 +36,7 @@ import 'module';
 
 ## :arrow_double_down: Advanced Imports
 
-> Default with Named or All
+> Default with Named or Namespace
 
 ```javascript
 import React, {Component, PropTypes} from 'react';
@@ -175,7 +175,7 @@ export {prop} from 'module';
 export {prop as alias} from 'module';
 ```
 
-> All Entries (except default export)
+> Namespace Entries (except default export)
 
 ```javascript
 export * from 'module';
@@ -207,7 +207,7 @@ export prop from 'module'; // ES NEXT proposal
 
 * https://github.com/leebyron/ecmascript-export-default-from
 
-> All Entries as Namespace (ES NEXT proposal)
+> Namespace Entries as Alias (ES NEXT proposal)
 
 ```javascript
 export * as ns from 'module';
