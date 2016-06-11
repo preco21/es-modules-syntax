@@ -1,6 +1,6 @@
 # ES2015 / ES NEXT Modules Syntax
 
-> HAAAX!
+> tl;dr
 
 ## :arrow_down_small: Basic Imports
 
