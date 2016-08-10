@@ -142,6 +142,14 @@ export {
 };
 ```
 
+> Empty
+
+```javascript
+export {};
+```
+
+* [Unambiguous JavaScript Grammar](https://github.com/bmeck/UnambiguousJavaScriptGrammar)
+
 ## :arrow_double_up: Advanced Exports
 
 > Export with Destructuring
