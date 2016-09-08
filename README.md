@@ -2,7 +2,7 @@
 
 > tl;dr
 
-## :arrow_down_small: Basic Imports
+## :arrow_down: Basic Imports
 
 > Default
 
@@ -45,7 +45,7 @@ import module, * as moduleAll from 'module';
 
 **Note:** Default export should always be preceded.
 
-## :arrow_up_small: Basic Exports
+## :arrow_up: Basic Exports
 
 > Default (one per module)
 
