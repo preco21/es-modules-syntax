@@ -5,29 +5,29 @@
 ### Table of Contents
 
 * Imports
-  * [Basic](#basic-importts)
+  * [**Basic**](#arrow_down-basic-imports)
     * Default
     * Named
     * Alias
     * Namespace
     * Bare
-  * [Advanced](#advanced-imports)
+  * [**Advanced**](#arrow_double_down-advanced-imports)
     * Default with Named or Namespace
 * Exports
-  * [Basic](#basic-exports)
+  * [**Basic**](#arrow_up-basic-exports)
     * Default
     * Named
     * Lazy
     * Empty
-  * [Advanced](#basic-exports)
+  * [**Advanced**](#arrow_double_up-advanced-exports)
     * Export with Destructuring
     * Export with Comma Separated Variables
 * Re-Exports
-  * [Basic](#basic-re-exports)
+  * [**Basic**](#repeat-basic-re-exports)
     * Named
     * Alias
     * Namespace Entries
-  * [Advanced](#advanced-re-exports)
+  * [**Advanced**](#twisted_rightwards_arrows-advanced-re-exports)
     * Named Export as Default
     * Default Export as Default
     * Default Export as Named
