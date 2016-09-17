@@ -65,6 +65,8 @@ import * as module from 'module';
 import 'module';
 ```
 
+**[⬆ Back to top](#table-of-contents)**
+
 ## :arrow_double_down: Advanced Imports
 
 > Default with Named or Namespace
@@ -75,6 +77,8 @@ import module, * as moduleAll from 'module';
 ```
 
 **Note:** Default export should always be preceded.
+
+**[⬆ Back to top](#table-of-contents)**
 
 ## :arrow_up: Basic Exports
 
@@ -183,6 +187,8 @@ export {};
 
 * [Unambiguous JavaScript Grammar](https://github.com/bmeck/UnambiguousJavaScriptGrammar)
 
+**[⬆ Back to top](#table-of-contents)**
+
 ## :arrow_double_up: Advanced Exports
 
 > Export with Destructuring
@@ -201,6 +207,8 @@ export const {a, b} = obj;
 ```javascript
 export const a = 123, b = 321, c = 321;
 ```
+
+**[⬆ Back to top](#table-of-contents)**
 
 ## :repeat: Basic Re-Exports
 
@@ -223,6 +231,8 @@ export * from 'module';
 ```
 
 **Note:** _Namespace Entries Re-Export_ does not export `default`.
+
+**[⬆ Back to top](#table-of-contents)**
 
 ## :twisted_rightwards_arrows: Advanced Re-Exports
 
@@ -257,6 +267,8 @@ export * as ns from 'module';
 ```
 
 * [ECMAScript Proposal: export ns from](https://github.com/leebyron/ecmascript-export-ns-from)
+
+**[⬆ Back to top](#table-of-contents)**
 
 ## License
 
