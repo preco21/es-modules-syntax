@@ -2,6 +2,37 @@
 
 > tl;dr
 
+### Table of Contents
+
+* Imports
+  * [Basic](#basic-importts)
+    * Default
+    * Named
+    * Alias
+    * Namespace
+    * Bare
+  * [Advanced](#advanced-imports)
+    * Default with Named or Namespace
+* Exports
+  * [Basic](#basic-exports)
+    * Default
+    * Named
+    * Lazy
+    * Empty
+  * [Advanced](#basic-exports)
+    * Export with Destructuring
+    * Export with Comma Separated Variables
+* Re-Exports
+  * [Basic](#basic-re-exports)
+    * Named
+    * Alias
+    * Namespace Entries
+  * [Advanced](#advanced-re-exports)
+    * Named Export as Default
+    * Default Export as Default
+    * Default Export as Named
+    * Namespace Entries as Aliased Namespace (ES NEXT proposal)
+
 ## :arrow_down: Basic Imports
 
 > Default
@@ -47,7 +78,7 @@ import module, * as moduleAll from 'module';
 
 ## :arrow_up: Basic Exports
 
-> Default (one per module)
+> Default
 
 ```javascript
 // export value as default
@@ -80,6 +111,8 @@ export function (x) {
   return x * x * x;
 }
 ```
+
+**Note:** Default Export should be one per module.
 
 > Named
 
@@ -183,11 +216,13 @@ export {prop} from 'module';
 export {prop as alias} from 'module';
 ```
 
-> Namespace Entries (except default export)
+> Namespace Entries
 
 ```javascript
 export * from 'module';
 ```
+
+**Note:** _Namespace Entries Re-Export_ does not export `default`.
 
 ## :twisted_rightwards_arrows: Advanced Re-Exports
 
@@ -215,7 +250,7 @@ export prop from 'module'; // ES NEXT proposal
 
 * [ECMAScript Proposal: export default from](https://github.com/leebyron/ecmascript-export-default-from)
 
-> Namespace Entries as Alias (ES NEXT proposal)
+> Namespace Entries as Aliased Namespace (ES NEXT proposal)
 
 ```javascript
 export * as ns from 'module';
