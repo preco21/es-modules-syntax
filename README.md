@@ -26,8 +26,8 @@
   * `Namespace`
 * [**:twisted_rightwards_arrows: Advanced Re-Exports**](#twisted_rightwards_arrows-advanced-re-exports)
   * `Named` as `Default`
-  * `Default` as `Default`
   * `Default` as `Named`
+  * `Default` as `Default`
   * `Namespace` as aliased `Namespace` (ES Next proposal)
 
 ## :arrow_down: Basic Imports
@@ -239,20 +239,20 @@ export * from 'module';
 export {prop as default} from 'module';
 ```
 
-> `Default` as `Default`
-
-```javascript
-export {default} from 'default';
-export default from 'default'; // ES Next proposal
-```
-
-* [ECMAScript Proposal: export default from](https://github.com/leebyron/ecmascript-export-default-from)
-
 > `Default` as `Named`
 
 ```javascript
 export {default as prop} from 'module';
 export prop from 'module'; // ES Next proposal
+```
+
+* [ECMAScript Proposal: export default from](https://github.com/leebyron/ecmascript-export-default-from)
+
+> `Default` as `Default`
+
+```javascript
+export {default} from 'module';
+export default from 'module'; // ES Next proposal
 ```
 
 * [ECMAScript Proposal: export default from](https://github.com/leebyron/ecmascript-export-default-from)
