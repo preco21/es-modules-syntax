@@ -4,62 +4,59 @@
 
 ### Table of Contents
 
-* Imports
-  * [**Basic**](#arrow_down-basic-imports)
-    * Default
-    * Named
-    * Alias
-    * Namespace
-    * Bare
-  * [**Advanced**](#arrow_double_down-advanced-imports)
-    * Default with Named or Namespace
-* Exports
-  * [**Basic**](#arrow_up-basic-exports)
-    * Default
-    * Named
-    * Lazy
-    * Empty
-  * [**Advanced**](#arrow_double_up-advanced-exports)
-    * Export with Destructuring
-    * Export with Comma Separated Variables
-* Re-Exports
-  * [**Basic**](#repeat-basic-re-exports)
-    * Named
-    * Alias
-    * Namespace Entries
-  * [**Advanced**](#twisted_rightwards_arrows-advanced-re-exports)
-    * Named Export as Default
-    * Default Export as Default
-    * Default Export as Named
-    * Namespace Entries as Aliased Namespace (ES NEXT proposal)
+* [**:arrow_down: Basic Imports**](#arrow_down-basic-imports)
+  * `Default`
+  * `Named`
+  * `Alias`
+  * `Namespace`
+  * `Bare`
+* [**:arrow_double_down: Advanced Imports**](#arrow_double_down-advanced-imports)
+  * `Default` with `Named` or `Namespace` (mixed)
+* [**:arrow_up: Basic Exports**](#arrow_up-basic-exports)
+  * `Default`
+  * `Named`
+  * `Lazy`
+  * `Empty` (Unambiguous JavaScript Grammar)
+* [**:arrow_double_up: Advanced Exports**](#arrow_double_up-advanced-exports)
+  * Export with destructuring
+  * Export with comma separated variables
+* [**:repeat: Basic Re-Exports**](#repeat-basic-re-exports)
+  * `Named`
+  * `Alias`
+  * `Namespace`
+* [**:twisted_rightwards_arrows: Advanced Re-Exports**](#twisted_rightwards_arrows-advanced-re-exports)
+  * `Named` as `Default`
+  * `Default` as `Default`
+  * `Default` as `Named`
+  * `Namespace` as aliased `Namespace` (ES Next proposal)
 
 ## :arrow_down: Basic Imports
 
-> Default
+> `Default`
 
 ```javascript
 import module from 'module';
 ```
 
-> Named
+> `Named`
 
 ```javascript
 import {prop} from 'module';
 ```
 
-> Alias
+> `Alias`
 
 ```javascript
 import {prop as alias} from 'module';
 ```
 
-> Namespace
+> `Namespace`
 
 ```javascript
-import * as module from 'module';
+import * as moduleAll from 'module';
 ```
 
-> Bare
+> `Bare`
 
 ```javascript
 import 'module';
@@ -69,7 +66,7 @@ import 'module';
 
 ## :arrow_double_down: Advanced Imports
 
-> Default with Named or Namespace
+> `Default` with `Named` or `Namespace` (mixed)
 
 ```javascript
 import React, {Component, PropTypes} from 'react';
@@ -82,7 +79,7 @@ import module, * as moduleAll from 'module';
 
 ## :arrow_up: Basic Exports
 
-> Default
+> `Default`
 
 ```javascript
 // export value as default
@@ -111,14 +108,14 @@ export default class {
 }
 
 // export function declaration as default
-export function (x) {
+export default function (x) {
   return x * x * x;
 }
 ```
 
 **Note:** Default Export should be one per module.
 
-> Named
+> `Named`
 
 ```javascript
 // export variable
@@ -131,7 +128,7 @@ bla
 bla
 `;
 
-// export let variable, but read-only
+// export let variable, but will be read-only
 export let foo = 'bar';
 
 // export function declaration
@@ -159,7 +156,7 @@ export class A {
 }
 ```
 
-> Lazy
+> `Lazy`
 
 ```javascript
 const pi = Math.PI;
@@ -175,11 +172,11 @@ function getRandomInt(max = 10, min = 0) {
 export {
   pi, // export
   calcPlus as plus, // export as alias
-  getRandomInt as default, // export as default, trailing comma is not necessary
+  getRandomInt as default, // export as default (trailing comma is not necessary)
 };
 ```
 
-> Empty
+> `Empty` (Unambiguous JavaScript Grammar)
 
 ```javascript
 export {};
@@ -191,7 +188,7 @@ export {};
 
 ## :arrow_double_up: Advanced Exports
 
-> Export with Destructuring
+> Export with destructuring
 
 ```javascript
 const obj = {
@@ -202,7 +199,7 @@ const obj = {
 export const {a, b} = obj;
 ```
 
-> Export with Comma Separated Variables
+> Export with comma separated variables
 
 ```javascript
 export const a = 123, b = 321, c = 321;
@@ -212,19 +209,19 @@ export const a = 123, b = 321, c = 321;
 
 ## :repeat: Basic Re-Exports
 
-> Named
+> `Named`
 
 ```javascript
 export {prop} from 'module';
 ```
 
-> Alias
+> `Alias`
 
 ```javascript
 export {prop as alias} from 'module';
 ```
 
-> Namespace Entries
+> `Namespace`
 
 ```javascript
 export * from 'module';
@@ -236,31 +233,31 @@ export * from 'module';
 
 ## :twisted_rightwards_arrows: Advanced Re-Exports
 
-> Named Export as Default
+> `Named` as `Default`
 
 ```javascript
 export {prop as default} from 'module';
 ```
 
-> Default Export as Default
+> `Default` as `Default`
 
 ```javascript
 export {default} from 'default';
-export default from 'default'; // ES NEXT proposal
+export default from 'default'; // ES Next proposal
 ```
 
 * [ECMAScript Proposal: export default from](https://github.com/leebyron/ecmascript-export-default-from)
 
-> Default Export as Named
+> `Default` as `Named`
 
 ```javascript
 export {default as prop} from 'module';
-export prop from 'module'; // ES NEXT proposal
+export prop from 'module'; // ES Next proposal
 ```
 
 * [ECMAScript Proposal: export default from](https://github.com/leebyron/ecmascript-export-default-from)
 
-> Namespace Entries as Aliased Namespace (ES NEXT proposal)
+> `Namespace` as aliased `Namespace` (ES Next proposal)
 
 ```javascript
 export * as ns from 'module';
