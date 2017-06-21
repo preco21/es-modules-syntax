@@ -1,36 +1,36 @@
-# ES2015 / ES NEXT Modules Syntax
+# ES2015 / ES NEXT modules syntax
 
 > tl;dr
 
-### Table of Contents
+### Table of contents
 
-* [**:arrow_down: Basic Imports**](#arrow_down-basic-imports)
+* [**:arrow_down: Basic imports**](#arrow_down-basic-imports)
   * `Default`
   * `Named`
   * `Alias`
   * `Namespace`
   * `Bare`
-* [**:arrow_double_down: Advanced Imports**](#arrow_double_down-advanced-imports)
+* [**:arrow_double_down: Advanced imports**](#arrow_double_down-advanced-imports)
   * `Default` with `Named` or `Namespace` (mixed)
-* [**:arrow_up: Basic Exports**](#arrow_up-basic-exports)
+* [**:arrow_up: Basic exports**](#arrow_up-basic-exports)
   * `Default`
   * `Named`
   * `Lazy`
   * `Empty` (Unambiguous JavaScript Grammar)
-* [**:arrow_double_up: Advanced Exports**](#arrow_double_up-advanced-exports)
+* [**:arrow_double_up: Advanced exports**](#arrow_double_up-advanced-exports)
   * Export with destructuring
   * Export with comma separated variables
-* [**:repeat: Basic Re-Exports**](#repeat-basic-re-exports)
+* [**:repeat: Basic re-exports**](#repeat-basic-re-exports)
   * `Named`
   * `Alias`
   * `Namespace`
-* [**:twisted_rightwards_arrows: Advanced Re-Exports**](#twisted_rightwards_arrows-advanced-re-exports)
+* [**:twisted_rightwards_arrows: Advanced re-exports**](#twisted_rightwards_arrows-advanced-re-exports)
   * `Named` as `Default`
   * `Default` as `Named`
   * `Default` as `Default`
   * `Namespace` as aliased `Namespace` (ES Next proposal)
 
-## :arrow_down: Basic Imports
+## :arrow_down: Basic imports
 
 > `Default`
 
@@ -64,7 +64,7 @@ import 'module';
 
 **[⬆ Back to top](#table-of-contents)**
 
-## :arrow_double_down: Advanced Imports
+## :arrow_double_down: Advanced imports
 
 > `Default` with `Named` or `Namespace` (mixed)
 
@@ -77,7 +77,7 @@ import module, * as moduleAll from 'module';
 
 **[⬆ Back to top](#table-of-contents)**
 
-## :arrow_up: Basic Exports
+## :arrow_up: Basic exports
 
 > `Default`
 
@@ -186,7 +186,7 @@ export {};
 
 **[⬆ Back to top](#table-of-contents)**
 
-## :arrow_double_up: Advanced Exports
+## :arrow_double_up: Advanced exports
 
 > Export with destructuring
 
@@ -207,7 +207,7 @@ export const a = 123, b = 321, c = 321;
 
 **[⬆ Back to top](#table-of-contents)**
 
-## :repeat: Basic Re-Exports
+## :repeat: Basic re-exports
 
 > `Named`
 
@@ -231,7 +231,7 @@ export * from 'module';
 
 **[⬆ Back to top](#table-of-contents)**
 
-## :twisted_rightwards_arrows: Advanced Re-Exports
+## :twisted_rightwards_arrows: Advanced re-exports
 
 > `Named` as `Default`
 
