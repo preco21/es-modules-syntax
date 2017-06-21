@@ -82,18 +82,18 @@ import module, * as moduleAll from 'module';
 > `Default`
 
 ```javascript
-// export value as default
+/* Export value as default */
 export default Math.PI;
 
-// export arrow function expression as default
+/* Export arrow function expression as default */
 export default (x) => x * x * x;
 
-// export variable as default
+/* Export variable as default */
 const a = 123;
 export default a;
 
-// export class declaration as default
-export default class {
+/* Export class declaration as default */
+export default class A {
   constructor(a = 0) {
     this.setA(a);
   }
@@ -107,7 +107,9 @@ export default class {
   }
 }
 
-// export function declaration as default
+/* Export function declaration as default */
+// In this case, you can omit the name of the function. Even if there is no function name it still treats to function declaration. This rule affects `classes` and `generator functions` as well.
+// See http://exploringjs.com/es6/ch_modules.html#_default-export-style-1-labeling-declarations
 export default function (x) {
   return x * x * x;
 }
@@ -118,20 +120,20 @@ export default function (x) {
 > `Named`
 
 ```javascript
-// export variable
+/* Export variable */
 export const pi = Math.PI;
 
-// export variable, which contains arrow function expression
+/* Export variable, which contains arrow function expression */
 export const str = () => `
 bla
 bla
 bla
 `;
 
-// export let variable, but will be read-only
+/* Export let variable, but will be read-only */
 export let foo = 'bar';
 
-// export function declaration
+/* Export function declaration */
 export function gcd(a, b) {
   if (!b) {
     return a;
@@ -140,7 +142,7 @@ export function gcd(a, b) {
   return gcd(b, a % b);
 }
 
-// export class declaration
+/* Export class declaration */
 export class A {
   constructor(a = 0) {
     this.setA(a);
@@ -170,9 +172,9 @@ function getRandomInt(max = 10, min = 0) {
 }
 
 export {
-  pi, // export
-  calcPlus as plus, // export as alias
-  getRandomInt as default, // export as default (trailing comma is not necessary)
+  pi, // Export
+  calcPlus as plus, // Export as alias
+  getRandomInt as default, // Export as default (trailing comma is not necessary)
 };
 ```
 
