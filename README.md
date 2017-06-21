@@ -267,6 +267,13 @@ export * as ns from 'module';
 
 **[⬆ Back to top](#table-of-contents)**
 
+## References
+
+* [ECMAScript-262 6.0 specification](https://www.ecma-international.org/ecma-262/6.0/#sec-modules)
+* [ExploringJS modules](http://exploringjs.com/es6/ch_modules.html)
+* [MDN `import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+* [MDN `export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
+
 ## License
 
 [MIT](http://preco.mit-license.org/)
